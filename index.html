@@ -34,7 +34,7 @@
   .gate-screen{
     position:fixed; inset:0; z-index:500; background:var(--bg);
     display:flex; align-items:center; justify-content:center; text-align:center;
-    padding:8vw; overflow:hidden;
+    padding:8vw; overflow:hidden; height:100vh; height:100dvh;
   }
   .gate-screen::before{
     content:''; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
@@ -326,12 +326,14 @@
   .product-page{
     position:fixed; inset:0; z-index:150; background:var(--bg);
     overflow-y:auto; transform:translateY(100%); transition:transform .5s ease;
+    height:100vh; height:100dvh;
   }
   .product-page.open{transform:translateY(0);}
 
   .collection-page{
     position:fixed; inset:0; z-index:150; background:var(--bg);
     overflow-y:auto; transform:translateY(100%); transition:transform .5s ease;
+    height:100vh; height:100dvh;
   }
   .collection-page.open{transform:translateY(0);}
   .collection-page-body{max-width:1200px; margin:0 auto; padding:50px 6vw 100px;}
@@ -343,6 +345,7 @@
   .journal-page{
     position:fixed; inset:0; z-index:150; background:var(--bg);
     overflow-y:auto; transform:translateY(100%); transition:transform .5s ease;
+    height:100vh; height:100dvh;
   }
   .journal-page.open{transform:translateY(0);}
   .jp-body{font-size:1.04rem; line-height:1.9; color:var(--muted);}
